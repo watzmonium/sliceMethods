@@ -21,6 +21,8 @@ type Float interface {
 }
 
 // basic methods similar to ruby and js for golang
+// all methods take a pointer to a slice
+// important with map to have a callback that returns any
 func Filter[T Ordered](s *[]T, callback func(T) bool) []T {
 	newSlice := make([]T, 0)
 
@@ -33,7 +35,7 @@ func Filter[T Ordered](s *[]T, callback func(T) bool) []T {
 	return newSlice
 }
 
-func Map[T Ordered](s *[]T, callback func(T) any) []any {
+func Map[T Ordered](s *[]T, callback func(T) any) []any  {
 	newSlice := make([]any, len(*s))
 
 	for i, v := range *s {
