@@ -1,3 +1,3 @@
-module github.com/watzmonium/sliceMethods.git
+module github.com/watzmonium/sliceMethods
 
 go 1.20
