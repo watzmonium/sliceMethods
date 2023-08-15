@@ -10,7 +10,7 @@ Each method is implemented with the constraint.Ordered implementation to be able
 
 1. initialize your go folder as a module with `go mod init <modulename>`
 2. add this package with `go get github.com/watzmonium/sliceMethods@latest`
-3. import (probably under an alias) in your go file with `import slices "go get github.com/watzmonium/sliceMethods"`
+3. import (probably under an alias) in your go file with `import slices "github.com/watzmonium/sliceMethods"`
 
 **The methods accept a pointer to a slice** to avoid copying of the slice itself.
 
